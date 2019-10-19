@@ -1,56 +1,88 @@
 /* Contato */
+body
+{
+    background-image: linear-gradient(-45deg,yellow,orange,aqua);
+    background-size: 400% 400%;
+    animation: fundo 10s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+h1
+{
+    font-size: 50px;
+}
+
 #formulário
 {
-    width: 1600px;
-    height: 500px;
-    border:red 5px solid;
+
 }
 
 #forms
 {
     display: grid;
-    grid-template-areas:"nome           nome       idade"
-                        "email          email       telefone"
-                        "cidade         cidade      uf  "
-                        "endereço       numero      complemento"
-                        "textarea       textarea    textarea";
-    grid-template-rows:     1fr 1fr 1fr 1fr 2fr;
-    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-areas:"nome       .           email           .          idade       ."
+                        "telefone   .           cidade          .          uf          ."         
+                        "endereço   .           complemento     .          numero      ."
+                        "textarea   textarea    textarea        textarea   textarea    textarea";
+    grid-template-rows:     1fr 1fr 1fr  4fr;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 #nome           {grid-area: nome }
-#idade          {grid-area: idade}
+#idade          {grid-area: idade;}
 #email          {grid-area: email}
 #telefone       {grid-area: telefone}
 #cidade         {grid-area: cidade}
-#uf             {grid-area: uf} 
+#uf             {grid-area: uf;} 
 #endereço       {grid-area: endereço}
 #numero         {grid-area: numero}
 #complemento    {grid-area: complemento}
-#textarea       {grid-area: textarea}
+#textarea       {grid-area: textarea;margin-top: 90px;}
+
+#forms #complemento input 
+{width: 190px}
 
 label
 {
-    margin-right : 20px;
+    margin-right : 10px;
     font-weight: bold;  
+    color: black;
+    font-size: 30px;
 }
 
 #forms input
 {
-    width: 400px ;
+    width: 300px;
+    height: 30px;
     border-radius: 0%;
+
+    color: white;
+    background-color: black;
+    border:2px orange solid;
 }
 
 #forms div
 {
     display: flex;
-    justify-content: left;
-    align-items: center;
-    border: red 1px solid;
+    justify-content: center;
+    align-items: center;    
+    margin-left: 20px;
+
 }
 
 textarea
 {
     width: 1400px;
-    height: 100px;
+    height: 300px;
+}
+
+/* Animations */
+
+@keyframes fundo
+{
+    0%{background-position: 0% 0%}
+    50%{background-position: 50% 0%}
+    100%{background-position: 0% 0%}    
 }
