@@ -1,0 +1,56 @@
+/* Contato */
+#formulário
+{
+    width: 1600px;
+    height: 500px;
+    border:red 5px solid;
+}
+
+#forms
+{
+    display: grid;
+    grid-template-areas:"nome           nome       idade"
+                        "email          email       telefone"
+                        "cidade         cidade      uf  "
+                        "endereço       numero      complemento"
+                        "textarea       textarea    textarea";
+    grid-template-rows:     1fr 1fr 1fr 1fr 2fr;
+    grid-template-columns:  1fr 1fr 1fr;
+}
+
+#nome           {grid-area: nome }
+#idade          {grid-area: idade}
+#email          {grid-area: email}
+#telefone       {grid-area: telefone}
+#cidade         {grid-area: cidade}
+#uf             {grid-area: uf} 
+#endereço       {grid-area: endereço}
+#numero         {grid-area: numero}
+#complemento    {grid-area: complemento}
+#textarea       {grid-area: textarea}
+
+label
+{
+    margin-right : 20px;
+    font-weight: bold;  
+}
+
+#forms input
+{
+    width: 400px ;
+    border-radius: 0%;
+}
+
+#forms div
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: red 1px solid;
+}
+
+textarea
+{
+    width: 1400px;
+    height: 100px;
+}

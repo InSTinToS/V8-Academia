@@ -296,6 +296,14 @@ input
     transform: translateY(4px);
 }
 
+
+/* Links */
+a:link, :visited, :hover, :active
+{
+    text-decoration: none;
+    color: black;
+}
+
 /* Hover */
 hr,#logoi,#logoi2,#menui,#locali,#horai,#modalidadesi img,
 #facebook,#instagram,li:hover
