@@ -1,0 +1,485 @@
+*{margin: 0px;padding: 0px;box-sizing: border-box;}
+body
+{
+    background-image: linear-gradient(-45deg,yellow,orange,aqua);
+    background-size: 400% 400%;
+
+    height: auto;
+    width: 100vw;
+
+    animation: fundo 10s ease-in-out infinite;
+
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* Header */
+#navegation
+{
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logoi
+{   
+    height:300px;
+
+    padding-right: 100px;
+    animation-name: imagem;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+#menui
+{ 
+    display: none;
+    width: 180px;
+    height: auto; 
+}
+#menup
+{
+    width: 1000px;
+    height: 500px;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+}
+#menup li
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 43px;
+    font-weight: bold;
+    text-align: justify;
+    padding: 10px;
+
+    animation-name: menu; 
+    animation-fill-mode: forwards; 
+}
+
+/* Animation of menu */
+#anlocal
+{
+    animation-duration: 3s;
+}
+#anmodalidades
+{
+    animation-duration: 3.5s;
+}
+#animagens
+{
+    animation-duration: 4s;
+}
+#ancontato 
+{
+    animation-duration: 4.5s;
+}
+
+
+/* Default section*/
+section
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    scroll-snap-align: start;
+}
+#sectionsimgs
+{
+    display: none;
+}
+
+/* Line 1 */
+iframe
+{
+    width: 80vw;
+    height:70vh;
+}
+#map
+{
+    background-color: black;
+}
+
+#localhora
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50vw;
+}
+#local, #hora
+{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+#locali
+{
+    width: 60px;
+}
+#horai
+{
+    height: 80px;
+}    
+#localh, #horah
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: justify;
+    color: white;
+}
+#horah2
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+    color: white;
+}
+
+/* Line 2 and 3*/
+#main
+{
+    background-image: linear-gradient(-45deg,yellow,orange,aqua);
+    background-size: 500% 500%;
+    animation: fundo 10s infinite ease-in-out;
+}
+#modalidades  
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    border:3px black solid;
+    border-radius: 10%;
+    width: 60vw;
+    height: 90vh;
+}
+#imagens
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    border:3px black solid;
+    border-top-left-radius:5%; 
+    border-top-right-radius:5%;
+    width: 60vw;
+    height: 90vh;
+}
+#modalidades2
+{
+
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 100px;
+}
+#modalidadesi img
+{
+    width: 350px;
+}
+#modalidadeslist,#imagensi
+{
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#img2500px
+{
+
+    display: grid;
+    grid-template:  "img1 img2 img3" 300px
+                    "img4 img5 img6" 300px
+                    / 400px 400px 400px;
+    transform: translateY(-25px)
+}
+#img2500px img {
+    width: 400px;
+    height:350px;
+}   
+#img1 {grid-area: img1}
+#img2 {grid-area: img2}
+#img3 {grid-area: img3}
+#img4 {grid-area: img4}
+#img5 {grid-area: img5}
+#img6 {grid-area: img6}
+
+
+#modalidadeslist div
+{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:350px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 39px;
+    font-weight: bold;
+}
+#buttonlist
+{
+    display: flex;
+    flex-flow: column;
+}
+input
+{
+    margin-top:15px;
+    width: 200px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    border:2px orange solid;
+    border-radius: 20%; 
+}
+#titulosection
+{   
+    width: 250px;
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+}
+.hrblack
+{
+    width: 250px;
+    height: 2px;
+    border-color: black;
+}
+.hryellow
+{
+    width: 25px;
+    height: 10px;;
+    transform: translate(0px,-7px);
+    border: white;
+    background-color: orange;
+    border-radius: 25%;
+}
+
+/* Footer */
+#footer
+{
+    width: 100vw;
+    height: 100vh;
+    
+    font-size: 7px;
+    background-color: black;
+    color:white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#copyright
+{
+    font-size: 20px;
+}
+#facebook
+{
+    width: 50px;
+    height: auto;
+}
+#instagram
+{
+    width: 60px;
+    height: auto;
+    transform: translateY(4px);
+}
+
+/* Hover */
+hr,#logoi,#logoi2,#menui,#locali,#horai,#modalidadesi img,
+#facebook,#instagram,li:hover
+{
+    cursor: pointer;
+}
+#menup li:hover
+{
+    font-size: 47px;
+    border-bottom: black solid 2px;
+}
+
+/* Effects */
+@keyframes fundo
+{
+    0%      {background-position: 0% 50%}
+    50%     {background-position: 100% 50%}
+    100%    {background-position: 0% 50%}
+}
+@keyframes imagem
+{
+    from{
+        opacity: 0;
+        transform: translateX(-50vw)
+    }to{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+@keyframes menu
+{
+    from{
+        opacity: 0;
+        transform: translateX(100vw);
+    }to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 2500px)
+{
+
+}
+@media (max-width: 2100px)
+{
+    #imagens
+    {
+        border-color: transparent;
+    }
+
+}
+@media (max-width: 1690px)
+{
+    #mordalidades{
+        width: 1300px;
+        height: auto;
+    }
+    #modalidades img
+    {
+        width: 250px;
+    }
+    #modalidadeslist div
+    {
+        width: 280px;
+    }
+    #menup li
+    {
+        font-size: 4    0px;
+    }
+    #logoi
+    {
+        width: 400px;
+        height: auto;
+        padding: 0px;
+    }
+}
+@media (max-width: 1379px)
+{   
+    #navegation
+    {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: space-around;
+    }
+    #menup li
+    {
+        font-size: 40px;
+    }
+    #localhora
+    {
+        flex-flow: column;
+    }
+    #local
+    {
+        width: 400px;
+    }
+    #hora
+    {
+        margin-top: 50px;
+        width: 400px;
+    }
+    iframe
+    {
+        width: 100vw;
+        height: 600px;
+    }
+    #modalidadesi img
+    {  
+        width: 200px;
+        margin: 0px;
+    }
+    #modalidades
+    {
+        height: 90vh;
+    }
+    #modalidadesi
+    {
+        margin-top:50px;
+        display: grid;
+        grid:
+            "1 2"
+            "3 4";
+    }
+    #modalidadeslist div
+    {
+        margin: 0px;
+    }
+    #modalidadeslist   
+    {
+        margin-top:50px;
+        display: grid;
+        grid:
+            "1 2"
+            "3 4"; 
+    }
+    #img2500px
+    {
+        display: none;
+    }   
+    #sectionsimgs img
+    {
+        width: 500px;
+        height: 300px;
+    }
+    #sectionsimgs
+    {
+        display: flex;
+        flex-flow: column wrap;
+
+        overflow: scroll;
+        overflow-x: hidden;
+        overflow-y:hidden;
+        scroll-snap-type: x mandatory;
+
+    }
+    #sectionsimgs section
+    {
+        width: 100vw;
+    }
+}
+@media (max-width:980px)
+{
+    #logoi
+    {
+        width: 240px;
+    }
+    #menup
+    {
+        width: auto;
+        flex-flow: column;
+    }
+    #menup li
+    {
+        font-size: 35px;
+    }
+    #modalidades
+    {
+        border-color: transparent;
+    }
+    #footer
+    {
+        flex-flow: column wrap;
+    }
+}
