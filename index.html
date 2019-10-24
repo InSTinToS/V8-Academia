@@ -27,20 +27,25 @@
 </head>
 
 <body>
-	<!-- Header -->
-	<section id="header">
-		<div id="navegation">
-			<div >
-				<img id="logoi" src="img/logo.png">
+
+	<header>
+		<section>
+			<div id="homepage">
+				<div>
+					<img id="logoi" src="img/logo.png">
+				</div>
+				<nav>
+					<ul id="menup">	
+
+						<li id="anlocal">  LOCAL  </li>
+						<li id="anmodalidades">		MODALIDADES</li>
+						<li id="animagens">			IMAGENS</li>
+						<li id="ancontato"> <a href="contato/contato.html"> CONTATO </a></li>
+					</ul>
+				</nav>
 			</div>
-			<ul id="menup">	
-				<li id="anlocal">  LOCAL  </li>
-				<li id="anmodalidades">		MODALIDADES</li>
-				<li id="animagens">			IMAGENS</li>
-				<li id="ancontato"> <a href="contato/contato.html"> CONTATO </a></li>
-			</ul>
-		</div>
-	</section>
+		</section>
+	</header>
 
 	<!-- Linha 1 -->
 	<section id="map">
@@ -80,31 +85,17 @@
 				<hr class="hrblack">
 				<hr class="hryellow">
 			</div>
+
 			<div id="modalidades2">
-				<div id="modalidadesi">
-					<img id="img1" src="img/academia.png">
-					<img id="img2" src="img/pump.png">
-					<img id="img3" src="img/muay.png">
-					<img id="img4" src="img/zumba.png">
-				</div>
-				<div id="modalidadeslist">
-					<div id="buttonlist"  class="list1">
-						Hipertrofia <br>
-						<input type="button" value="Inscreva-se">
-					</div>
-					<div id="buttonlist" class="list2">
-						Pump <br>
-						<input type="button" value="Inscreva-se">
-					</div>
-					<div id="buttonlist" class="list3">
-						Muay Thay <br>
-						<input type="button" value="Inscreva-se">
-					</div>
-					<div id="buttonlist" class="list4">
-						Zumba <br>
-						<input type="button" value="Inscreva-se">
-					</div>
-				</ul>
+				<img id="imgs1" src="img/academia.png">
+				<img id="imgs2" src="img/pump.png">
+				<img id="imgs3" src="img/muay.png">
+				<img id="imgs4" src="img/zumba.png">
+				
+				<input type="button" id="list1" value="Inscreva-se">
+				<input type="button"id="list2"  value="Inscreva-se">
+				<input type="button"id="list3"  value="Inscreva-se">
+				<input type="button"id="list4"  value="Inscreva-se">
 			</div>
 		</div>
 	</section>
@@ -159,6 +150,8 @@
 			<img id="instagram" src="img/instagram.png">
 		</div>
 	</section>
+
+	<script src="/script.js"></script>
 </body>
 
 </html>

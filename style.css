@@ -9,20 +9,34 @@ body
 
     animation: fundo 10s ease-in-out infinite;
 
+
     scroll-snap-type: y mandatory;
+
     overflow-x: hidden;
     overflow-y: hidden;
 }
 
 /* Header */
-#navegation
+#homepage
 {
     width: 100vw;
-    height: 100vw;
+
     display: flex;
     justify-content: center;
     align-items: center;
+    
+
 }
+
+#top {
+    background-color: black;
+
+    width: 100vw;
+    height: 10vh;
+}
+
+
+
 #logoi
 {   
     height:300px;
@@ -91,6 +105,7 @@ section
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-around;
+    
     scroll-snap-align: start;
 }
 #sectionsimgs
@@ -154,7 +169,7 @@ iframe
     background-size: 500% 500%;
     animation: fundo 10s infinite ease-in-out;
 }
-#modalidades  
+#modalidades 
 {
     display: flex;
     flex-flow: column nowrap;
@@ -165,6 +180,42 @@ iframe
     width: 60vw;
     height: 90vh;
 }
+
+
+#modalidades img
+{
+    width: 350px;
+}
+
+
+#modalidades2
+{   
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas: "imgs1      imgs2    imgs3    imgs4"  
+                         "list1      list2    list3    list4";
+
+    grid-template-rows:     400px auto;    
+    grid-template-columns:  350px 350px 350px 350px;
+
+    width: auto;
+    height: auto;
+
+    justify-items: center;
+
+    transform: translateY(-20%);
+}
+
+#img1{grid-area: imgs1;}
+#img2{grid-area: imgs2;}
+#img3{grid-area: imgs3;}
+#img4{grid-area: imgs4;}
+
+#list1{grid-area: list1;}
+#list2{grid-area: list2;}
+#list3{grid-area: list3;}
+#list4{grid-area: list4;}
+
 #imagens
 {
     display: flex;
@@ -177,13 +228,7 @@ iframe
     width: 60vw;
     height: 90vh;
 }
-#modalidades2
-{
 
-    display: flex;
-    flex-flow: column;
-    margin-bottom: 100px;
-}
 #modalidadesi img
 {
     width: 350px;
@@ -196,19 +241,21 @@ iframe
     justify-content: center;
     align-items: center;
 }
+
 #img2500px
 {
-
     display: grid;
     grid-template:  "img1 img2 img3" 300px
                     "img4 img5 img6" 300px
                     / 400px 400px 400px;
     transform: translateY(-25px)
 }
+
 #img2500px img {
     width: 400px;
     height:350px;
 }   
+
 #img1 {grid-area: img1}
 #img2 {grid-area: img2}
 #img3 {grid-area: img3}
@@ -347,7 +394,18 @@ hr,#logoi,#logoi2,#menui,#locali,#horai,#modalidadesi img,
 /* Responsiveness */
 @media (max-width: 2500px)
 {
-
+    #modalidades{
+        width: 1600px;
+        height: 90vh;
+    }
+    #modalidades img
+    {
+        width: 350px;
+    }
+    #modalidadeslist div
+    {
+        width: 280px;
+    }
 }
 @media (max-width: 2100px)
 {
@@ -356,10 +414,17 @@ hr,#logoi,#logoi2,#menui,#locali,#horai,#modalidadesi img,
         border-color: transparent;
     }
 
+
 }
 @media (max-width: 1690px)
 {
-    #mordalidades{
+    #modalidades2{
+        transform: translateY(0);
+        grid-template-columns: 300px 300px 300px 300px;
+        grid-template-rows: 300px 100px;
+    }
+
+    #modalidades{
         width: 1300px;
         height: auto;
     }
@@ -367,24 +432,44 @@ hr,#logoi,#logoi2,#menui,#locali,#horai,#modalidadesi img,
     {
         width: 250px;
     }
-    #modalidadeslist div
-    {
-        width: 280px;
-    }
     #menup li
     {
         font-size: 4    0px;
+
     }
     #logoi
     {
         width: 400px;
         height: auto;
         padding: 0px;
+
     }
 }
-@media (max-width: 1379px)
+@media (max-width: 1320px){
+    #modalidades
+    {
+        border-color: transparent;
+    }
+
+    #modalidades2
+    {   
+
+        margin-top: 50px;
+        display: grid;
+        grid-template-areas: "img1      img2"
+                             "list1     list2"
+                             "img3      img4"
+                             "list3     list4";
+        grid-template-rows:     auto 100px auto auto;
+        grid-template-columns:  400px auto;
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 1550px)
 {   
-    #navegation
+    #homepage
     {
         display: flex;
         flex-flow: column nowrap;
@@ -412,35 +497,6 @@ hr,#logoi,#logoi2,#menui,#locali,#horai,#modalidadesi img,
     {
         width: 100vw;
         height: 600px;
-    }
-    #modalidadesi img
-    {  
-        width: 200px;
-        margin: 0px;
-    }
-    #modalidades
-    {
-        height: 90vh;
-    }
-    #modalidadesi
-    {
-        margin-top:50px;
-        display: grid;
-        grid:
-            "1 2"
-            "3 4";
-    }
-    #modalidadeslist div
-    {
-        margin: 0px;
-    }
-    #modalidadeslist   
-    {
-        margin-top:50px;
-        display: grid;
-        grid:
-            "1 2"
-            "3 4"; 
     }
     #img2500px
     {
@@ -482,10 +538,7 @@ hr,#logoi,#logoi2,#menui,#locali,#horai,#modalidadesi img,
     {
         font-size: 35px;
     }
-    #modalidades
-    {
-        border-color: transparent;
-    }
+
     #footer
     {
         flex-flow: column wrap;
